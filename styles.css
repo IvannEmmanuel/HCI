@@ -43,13 +43,18 @@ button {
     color: white;
     border: none;
     padding: 10px 20px;
+    padding-left: 40px; /* Make space for the icon */
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
+    background-image: url('/images/moon.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px 20px;
 }
 
 button:hover {
-    background-color: #357ab8;
+    background-color: #805b83;
     transform: scale(1.05);
 }
 
