@@ -1,7 +1,6 @@
 // New feature: Toggle between light and dark themes
 const toggleThemeButton = document.createElement('button');
 toggleThemeButton.textContent = 'Toggle Theme';
-toggleThemeButton.style.backgroundColor = '#805b83'; // Set button color
 // Append the button to the header for better visibility
 document.querySelector('header').appendChild(toggleThemeButton);
 
