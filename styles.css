@@ -1,0 +1,157 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s, color 0.5s;
+    height: auto;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #a571aa;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s;
+}
+
+main {
+    margin-top: 20px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #357ab8;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* Dark theme styles */
+body.dark-theme {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+header.dark-theme {
+    background-color: #222;
+}
+
+main.dark-theme {
+    background-color: #333;
+    /* Ensure main container also switches to dark */
+}
+
+section.dark-theme {
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+footer.dark-theme {
+    background-color: #222;
+}
+
+aside {
+    background-color: white;
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+aside.dark-theme {
+    background-color: #444;
+    color: #fff;
+}
+
+.blog-grid {
+    color: black;
+    /* Default color for light mode */
+}
+
+.blog-grid.dark-theme {
+    color: white;
+    /* Color for dark mode */
+}
+
+/* Use a more elegant font for headings */
+h1,
+h2,
+h3 {
+    letter-spacing: 1px;
+}
+
+/* Add spacing and hover effects to navigation links */
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Style images with rounded corners and shadows */
+img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Add a subtle animation to the featured image */
+.featured-image {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-10px);
+    }
+}
